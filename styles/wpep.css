@@ -1,0 +1,68 @@
+.wpep-heading {
+	margin-bottom: 18px;
+}
+.wpep-module-table{
+	padding:5px;
+}
+td.wpep-img-col {
+	padding:5px !important;
+}
+
+// Flip Card
+
+.flip-card-wrapper{
+	display: flex;
+	  width: 100%;
+	  height: 100vh;
+	  justify-content: center;
+	  align-items: center;
+	 perspective: 1000px;
+}
+
+// Flip Card magic
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.card {
+  position: relative;
+  top:0;
+  margin: 0.5rem;
+  text-align: center;
+  line-height: 8rem;
+  color: #ecf0f1;
+  border-radius: 0.8rem;
+ transform-style: preserve-3d;
+}
+
+.face {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background-size: cover;
+  background-position: center center;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.face--front {
+  background: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.face--back {
+  background: #2c3e50;
+  font-size: .9rem;
+  transform: rotateY(180deg);
+  border: 1px solid #e2e2e2;
+}
+
+.card:hover .face--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .face--back {
+  transform: rotateY(0deg);
+}

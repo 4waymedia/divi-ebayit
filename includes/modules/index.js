@@ -1,3 +1,3 @@
-import HelloWorld from './HelloWorld/HelloWorld';
+import EbayProjector from './EbayProjector/EbayProjector';
 
-export default [HelloWorld];
+export default [EbayProjector];
